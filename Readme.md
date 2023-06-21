@@ -27,7 +27,7 @@
 - El POST se puede hacer con Postman o mediante formulario HTML. 
   ((HECHO)).
 
-- El campo thumbnails recibe un string, por los momentos no tiene implementado recibir varias rutas para colocarlas emn un arreglo.           
+- El campo thumbnails recibe un string, por los momentos no tiene implementado recibir varias  rutas de archivo para colocarlas en un arreglo.           
 
 - La ruta PUT /:pid deberá tomar un producto y actualizarlo por los campos enviados desde body. NUNCA se debe actualizar o eliminar el id al momento de hacer dicha actualización. - ((HECHO)).
 
@@ -36,10 +36,10 @@
 - Para el carrito, el cual tendrá su router en /api/carts/, configurar dos rutas:
 
   - La ruta raíz POST / deberá crear un nuevo carrito con la siguiente estructura:
-    - Id:Number/String (A tu elección, de igual manera como con los productos, debes asegurar que nunca se dupliquen los ids y que este se autogenere).
-    - products: Array vacío que contendrá objetos que representen cada producto - ((HECHO)).
+     - Id:Number/String (A tu elección, de igual manera como con los productos, debes asegurar que nunca se dupliquen los ids y que este se autogenere).
+     - products: Array vacío que contendrá objetos que representen cada producto - ((HECHO)).
 
-  - La ruta GET /:cid deberá listar los productos que pertenezcan al carrito con el parámetro cid proporcionados. - (((HECHO)).)
+  - La ruta GET /:cid deberá listar los productos que pertenezcan al carrito con el parámetro cid proporcionados. (((HECHO)).)
 
 - La ruta POST  /:cid/product/:pid deberá agregar el producto al arreglo “products” del carrito seleccionado, agregándose como un objeto (((HECHO))) bajo el siguiente formato:
 
